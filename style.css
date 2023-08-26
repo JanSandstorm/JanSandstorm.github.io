@@ -65,7 +65,7 @@ a:hover {
 .video (
 height: 100vh;
 width: 100%;
-object-fit: cover; /* fill, or cover if you dont want distortion */
+object-fit: contained; /* fill, or cover if you dont want distortion */
 position: absolute;
 )
 
