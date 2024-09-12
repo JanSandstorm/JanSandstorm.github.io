@@ -67,7 +67,7 @@ a:hover {
 	color:cyan;
 }
 .post a {
-    	background-color: blue;
+    	/* background-color: blue; */
    	/* mix-blend-mode: screen; */
     	position: absolute;
     	display: block;
