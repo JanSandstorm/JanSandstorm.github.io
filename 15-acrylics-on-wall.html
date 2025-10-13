@@ -40,15 +40,127 @@
 		 <img src="https://www.dropbox.com/scl/fi/5uwzvl6bb5kln81daae34/Acrylics-in-studio.jpg?rlkey=opb4rpxlhnx0y5z5ak8o67041&st=d3k99hxs&raw=1" alt="Page 15 - Two acrylics on wall for size reference"> 
 
 	</nav>
-
 	<!-- The Footer section-->
  	<div class="post">
-         	<img src="https://www.dropbox.com/scl/fi/7achtu3obtg5wj8b4dcza/footer.jpg?rlkey=xo4li8xk4x9660kfywvjncjod&raw=1" alt="Footer">
-		<a style="left: 0%; top: 35%; width:40%; height: 60%;" href="16-croquis.html" aria-label="Next post"></a>
-	    	<a style="left: 60%; top: 35%; width:40%; height: 60%;" href="14-portrait-acrylics-woman.html" aria-label="Previous post"></a>
-		<a style="left: 42%; top: 38%; width:16%; height: 20%;" href="mailto:jan@jansandstorm.com?subject=Comment" aria-label="Comment"></a>
-		<a style="left: 42%; top: 60%; width:16%; height: 20%;" href="index.html" aria-label="Home"></a>
+					<img src="https://www.dropbox.com/scl/fi/7achtu3obtg5wj8b4dcza/footer.jpg?rlkey=xo4li8xk4x9660kfywvjncjod&raw=1" alt="Footer">
+					<a style="left: 0%; top: 0%; width:40%; height: 100%;" id="next-link" href="#" aria-label="Next post"></a>
+					<a style="left: 60%; top: 0%; width:40%; height: 100%;" id="prev-link" href="#" aria-label="Previous post"></a>
+					<a style="left: 42%; top: 0%; width:16%; height: 100%;" href="index.html" aria-label="Home"></a>
       	</div>
+
+
+
+<!-----------------------  Text Expansion Section  --------------------------------> 
+ <details>
+		<summary>Expand for text caption </summary>
+		<div class="letter">
+				  <p>Picture : The two last acrylics for size reference.</p>
+				  <p>I'm used to sketchbook A5 format so they both felt huge when I painted them.</p>
+				  		</div>
+	</details>
+	<br>
+
+<!-----------------------  Comments Expansion Section  ----------------------------> 
+<details>
+	<summary> Expand to read or add comments </summary>
+	<p> Scroll within the comment box below. (Your comment will show up after a while).</p>
+	<nav class="comments">
+		<div id="cusdis_thread"
+  			data-host="https://cusdis.com"
+  			data-app-id="c9ed7762-8539-4eee-b196-b876111eb342"
+  			data-page-id="{{ 15-acrylics-on-wall.html}}"
+  			data-page-url="{{ https://jansandstorm.com/15-acrylics-on-wall.html }}"
+  			data-page-title="{{ 15-acrylics-on-wall.html }}"
+  			data-theme="dark"
+ 		 ></div>
+	</nav> 
+
+	<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+</details>			
+<br>
+<br>
+<!-----------------------  Subscription Form Section  ----------------------------> 
+<!-- Minimal HTML email subscription button -->
+<button id="subscribeButton" style="
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+">
+  Subscribe to the Newsletter
+</button>
+
+<script>
+  // Simple obfuscation to deter spam bots
+  const user = "jan";
+  const domain = "jansandstorm.com";
+  const subject = encodeURIComponent("I'd like to subscribe");
+  const body = encodeURIComponent("Hi, I'd like to receive your newsletter.");
+  
+  document.getElementById("subscribeButton").addEventListener("click", () => {
+    window.location.href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+  });
+</script>
+
+<p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+  Clicking the button opens your email program. Just send the message to subscribe.
+</p>
+
+<br>
+<br>
+
+
+<!------------------------ NAVIGATION------------------------------->
+<!-- Script to Load the shared list of post filenames -->
+	<script src="posts.js" ></script>
+		<nav class="post-navigation">
+
+  			<!-- Placeholder for "next" link (newer post) -->
+			<!--	<a id="next-link" href="#">← Later</a> -->
+  
+			<!-- Placeholder for "previous" link (older post) -->
+			<!-- <a id="prev-link" href="#">Previous →</a>  -->
+		</nav>
+
+
+<!-- Script to figure out next and previous page  -->
+	<script>
+	// Get the current page's filename from the browser URL
+	// If the URL ends with '/', assume we're on 'index.html'
+	const current = window.location.pathname.split("/").pop() || "index.html";
+
+	// 2️⃣ Find this filename's position (index) in the 'posts' array
+	const i = posts.indexOf(current);
+
+	// 3️⃣ Determine which files come before and after in the array
+	// 'prev' means the next older post (appears later in the list)
+	const prev = posts[i + 1];
+	// 'next' means the newer post (appears earlier in the list)
+	const next = posts[i - 1];
+
+	// 4️⃣ If there *is* an older post, update the "Previous" link
+	if (prev) {
+  			document.getElementById("prev-link").href = prev;
+			} else {
+  				// If there’s no older post (i.e., this is the last one), hide the link
+  				document.getElementById("prev-link").style.visibility = "hidden";
+			}
+
+	// If there *is* a newer post, update the "Next" link
+	if (next) {
+  			document.getElementById("next-link").href = next;
+			} else {
+  				// If there’s no newer post (i.e., this is the first one), hide the link
+  				document.getElementById("next-link").style.visibility = "hidden";
+			}
+	</script>
+
+
   </body>
+
 </html>
 
