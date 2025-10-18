@@ -40,54 +40,57 @@
 		  <!-- The blogpost picture section with link-->
 					 <img src="https://www.dropbox.com/scl/fi/oje7m1b7rcn15hi1d24fc/projects.png?rlkey=e4y4949b4bk79seh6urr282of&raw=1" alt="Project Index"> 
 
-					 <!-- The blogpost letter section-->
-					 <nav class="letter">
 							 <details>
-						 <summary> Expand to see project index </summary>
+									 <summary> Expand to see project index </summary>
 
-								<!-- The container where the list will appear -->
-								<ul id="news-list"></ul>
+					 					<div class="letter">
+										  <!-- The container where the list will appear -->
+													 <ul id="news-list"></ul>
 
-								<!-- Load the posts list , also used in the navigation section below.-->
-									<script src="projects.js"></script>
+													 <!-- Load the posts list , also used in the navigation section below.-->
+														 <script src="projects.js"></script>
 
-								<!-- Your filtering script -->
-								<script>
-										  // Select the HTML element where you’ll put the list
-										  const container = document.getElementById("news-list");
+													 <!-- Your filtering script -->
+													 <script>
+																// Select the HTML element where you’ll put the list
+																const container = document.getElementById("news-list");
 
-										  // Filter the posts array for filenames containing the word "news"
-									  	const newsPosts = posts.filter(filename => filename.toLowerCase().includes("-"));
+																// Filter the posts array for filenames containing the word "news"
+															 const newsPosts = posts.filter(filename => filename.toLowerCase().includes("-"));
 
-										  // Loop through each matching post and build a list item
-										  newsPosts.forEach(filename => {
-													 // Create a new <li> element
-													 const li = document.createElement("li");
-													 // Create a clickable link for that file
-													 const a = document.createElement("a");
-													 a.href = filename;           // link to the HTML page
-													 a.textContent = filename.replace(".html", ""); // text shown to user
-													 // Add the link to the list item
-													 li.appendChild(a);
-													 // Add the list item to the container
-													 container.appendChild(li);
-										  });
+																// Loop through each matching post and build a list item
+																newsPosts.forEach(filename => {
+																		  // Create a new <li> element
+																		  const li = document.createElement("li");
+																		  // Create a clickable link for that file
+																		  const a = document.createElement("a");
+																		  a.href = filename;           // link to the HTML page
+																		  a.textContent = filename.replace(".html", ""); // text shown to user
+																		  // Add the link to the list item
+																		  li.appendChild(a);
+																		  // Add the list item to the container
+																		  container.appendChild(li);
+																});
 
-										  // Debug info (optional)
-										  console.log("News posts found:", newsPosts);
-								</script>
+																// Debug info (optional)
+																console.log("News posts found:", newsPosts);
+													 </script>
+											 </div>
 							 </details>
-
 					
 		  </nav> <!-- End of blogpost content section-->
 
 
 		  <!------------------------ The Footer section-------------------->
 		  <div class="post">
+					 <br>
+					 <br>
 					 <img src="https://www.dropbox.com/scl/fi/svveioeqq1uq0vxelffkj/footer_last.png?rlkey=9vllgn7o4hfzr26195y316juw&raw=1" alt="Footer">
 					 <a style="left: 0%; top: 0%; width:40%; height: 100%;" id="next-link" href="#" aria-label="Next post"></a>
 					 <a style="left: 60%; top: 0%; width:40%; height: 100%;" id="prev-link" href="#" aria-label="Previous post"></a>
 					 <a style="left: 42%; top: 0%; width:16%; height: 100%;" href="index.html" aria-label="Home"></a>
+					 <br>
+					 <br>
 		  </div><!-- End of blogpost footer section-->
 
 
