@@ -37,9 +37,43 @@
 	<!-- The blogpost section-->
  	<nav class="post">
 		<!-- The blogpost section-->
-		 <img src="https://www.dropbox.com/scl/fi/0iv4lm3akcfh96i2bvq4v/About_me_and_Purpose.png?rlkey=zwza3gg8u3c2gg2yd1ytd37e1&raw=1" alt="Page 1"> 
+		 <img src="https://www.dropbox.com/scl/fi/pdk2molkqeuvolu7u9kxf/about_me.png?rlkey=826ajef7neogxn9asiugyb047&raw=1" alt="Page 1"> 
 		<a style="left: 56%; top: 86%; width:23%; height: 4%;" href="https://www.instagram.com/jansandstorm/" aria-label="Instagram"></a>
 		<a style="left: 12%; top: 89%; width:18%; height: 4%;" href="https://youtube.com/@jansandstorm?si=TiSpoAw3N74ud-wf" aria-label="Youtube"></a>
+
+		<!-----------------------  Subscription Form Section  ----------------------------> 
+<!-- Minimal HTML email subscription button -->
+<button id="emailButton" style="
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+">
+  Contact Me 
+</button>
+
+<script>
+  // Simple obfuscation to deter spam bots
+  const user = "jan";
+  const domain = "jansandstorm.com";
+  const subject = encodeURIComponent("Subject");
+  const body = encodeURIComponent("Hi, ");
+  
+  document.getElementById("emailButton").addEventListener("click", () => {
+    window.location.href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+  });
+</script>
+
+<p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+  Clicking the button opens your email program.
+</p>
+
+<br>
+<br>
+
 	</nav>
 
 <!------------------------ The Footer section-------------------->
@@ -57,9 +91,18 @@
 		<summary>Expand for text caption </summary>
 		<div class="letter">
 				  <p><b>About Me</b></p>
-				  <p>In spring of 2024 I decided to resign from my dream job to free up time for curiosty-driven projects focused on learning, personal growth, and making a difference.</p>
+				  <p>In spring of 2024 I decided to resign and free up time for curiosty-driven projects focused on learning, personal growth, and making a difference.</p>
 				  <p>In this blog-style notebook I share thoughts and outcomes along the way.</p>
-				  <p> Picture: Loose sketch of woman taking a photo.
+				  <p>This website is intentionally simplistic and content is often handwritten on actual paper.</p>
+				  <p>All content (text, pictures, music, videos etc) and the website itself is created by me and falls under copyright law.</p>
+				  <p> Picture: Comic strip with four panels:</p>
+				  <ol>
+							 <li>Who am I?</li>
+							 <li>Hi, I'm Jan...</li>
+							 <li>I'm here because of a big decision I took in 2024. 
+							 <li>Me: - Sorry boss, time for me to move on.</li>
+							 <li>Manager: - ?</li>
+							 <li>I had decided to quit to free up time for things I like but never had enough time for.</li>
 			</div>
 	</details>
 <br>

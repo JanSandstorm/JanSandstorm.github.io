@@ -37,8 +37,8 @@
     	<nav class="post">
 		<img src="https://www.dropbox.com/scl/fi/ebej88q59yyllltudzr6p/index4.png?rlkey=4nnbx1g7y0o8jcedxcg2zipcy&raw=1" alt="Index">
 		<a style="left: 5%; top: 12%; width:39%; height: 5%;" href="1-about.html" aria-label="About"></a>
-		<a style="left: 5%; top: 19%; width:39%; height: 5%;" href="22-newsletter-3.html" aria-label="Newsletter"></a>
-<a style="left: 5%; top: 25%; width:39%; height: 5%;" href="" aria-label="Projects"></a>
+		<a style="left: 5%; top: 19%; width:39%; height: 5%;" href="newsletters.html" aria-label="Newsletters"></a>
+<a style="left: 5%; top: 25%; width:39%; height: 5%;" href="projects.html" aria-label="Projects"></a>
 <a style="left: 5%; top: 31%; width:39%; height: 5%;" id="prev-link" href="#" aria-label="Previous post"></a>
 		</nav>
 	</nav>
@@ -109,35 +109,37 @@
 
 <!-- Script to figure out next and previous page  -->
 	<script>
-	// Get the current page's filename from the browser URL
-	// If the URL ends with '/', assume we're on 'index.html'
-	const current = window.location.pathname.split("/").pop() || "index.html";
+			  // Get the current page's filename from the browser URL
+			  // If the URL ends with '/', assume we're on 'index.html'
+			  const current = window.location.pathname.split("/").pop() || "index.html";
 
-	// 2️⃣ Find this filename's position (index) in the 'posts' array
-	const i = posts.indexOf(current);
+			  // 2️⃣ Find this filename's position (index) in the 'posts' array
+			  const i = posts.indexOf(current);
 
-	// 3️⃣ Determine which files come before and after in the array
-	// 'prev' means the next older post (appears later in the list)
-	const prev = posts[i + 1];
-	// 'next' means the newer post (appears earlier in the list)
-	const next = posts[i - 1];
+			  // 3️⃣ Determine which files come before and after in the array
+			  // 'prev' means the next older post (appears later in the list)
+			  const prev = posts[i + 1];
+			  // 'next' means the newer post (appears earlier in the list)
+			  const next = posts[i - 1];
 
-	// 4️⃣ If there *is* an older post, update the "Previous" link
-	if (prev) {
-  			document.getElementById("prev-link").href = prev;
-			} else {
-  				// If there’s no older post (i.e., this is the last one), hide the link
-  				document.getElementById("prev-link").style.visibility = "hidden";
-			}
+			  // 4️⃣ If there *is* an older post, update the "Previous" link
+			  if (prev) {
+					  document.getElementById("prev-link").href = prev;
+					  } else {
+						  // If there’s no older post (i.e., this is the last one), hide the link
+						  document.getElementById("prev-link").style.visibility = "hidden";
+					  }
 
-	// If there *is* a newer post, update the "Next" link
-	if (next) {
-  			document.getElementById("next-link").href = next;
-			} else {
-  				// If there’s no newer post (i.e., this is the first one), hide the link
-  				document.getElementById("next-link").style.visibility = "hidden";
-			}
+			  // If there *is* a newer post, update the "Next" link
+			  if (next) {
+					  document.getElementById("next-link").href = next;
+					  } else {
+						  // If there’s no newer post (i.e., this is the first one), hide the link
+						  document.getElementById("next-link").style.visibility = "hidden";
+					  }
 	</script>
+
+
 
 
   </body>

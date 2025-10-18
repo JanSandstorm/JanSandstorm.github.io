@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!---------------------------------- Google tag (gtag.js) ------------------------------->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBR0BLDMHT"></script>
+		  <script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				  gtag('config', 'G-SBR0BLDMHT');
+		  </script>
+
+	  <!------------------------------- Meta information -------------------------------------->
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>Painting my acrylic version of Matisse's Woman in hat</title> <!-- Marker for new text:mfntxt -->
+		  <link rel="stylesheet" type="text/css" href="style.css">
+			  <!-- provide a brief and concise description of the content of a web page. This description is often used by search engines to display a snippet of information in search results. --> 
+		  <meta name="description" content="A mostly handwritten multidisciplinary art blog about music, composition, guitar playing, photography, poetry, pencil and ink drawing, comics, watercolor painting, writing and story telling">
+		  <!-- when someone shares the page on a platform like Facebook, these propery tags help control how the shared content appears. -->
+		  <!-- Marker for new text:mfntxt -->
+		  <meta property="og:title" content="Painting my acrylic version of Matisse's Woman in hat"> 
+		  <meta property="og:description" content="Multidisciplinary art learning blog">
+		  <meta property="og:image" content="https://www.dropbox.com/scl/fi/ilu2beogdndtzf6mpa8yq/Foto-2023-04-23-19-23-54.jpg?raw=1&rlkey=4jy01fclmrnipoo9yyxrrrtkr">
+  </head>
+
+
+  <!--------------------------------------- The body------------------------------------------------------------>
+
+  <body>
+
+			  <!------------------------------------ Header section -------------------------------------->
+		  <header class="title">
+					 <a href="index.html"><img src="https://www.dropbox.com/scl/fi/x3ft7jjp0dlt4qkfkctmh/header_1.png?rlkey=67ag4r1kcq31bnvm7oxpj449q&raw=1" alt="Sandstorm Chronicles"></a>
+		  </header>
+
+			  <!----------------------------------- The content section ---------------------------------->
+		  <nav class="post">
+		  <!-- Marker for new text:mfntxt -->
+		  <!-- The blogpost picture section with link-->
+					 <img src="https://www.dropbox.com/scl/fi/js5sav5e7hlbdf84y5j6f/Woman_in_hat_acrylic_painting.png?rlkey=oxemmrnxjmt2gubgmcad9389j&st=f873dhct&raw=1" alt="Page 21 - Painting my acrylic version of Matisse's Woman in hat"> 
+					 <a style="left: 6%; top: 15%; width:33%; height: 8%;" href="https://www.moma.org/interactives/objectphoto/artists/24538.html#about" target="_blank" aria-label="Jozsef Pecsi on MoMa"></a>
+
+					 <!-- The blogpost letter section-->
+					 <nav class="letter">
+							<h3>Newsletter</h3> 
+					  <h1>News Posts</h1>
+						
+						<!-- The container where the list will appear -->
+						<ul id="news-list"></ul>
+
+						<!-- Load the posts list -->
+						<script src="posts.js"></script>
+
+						<!-- Your filtering script -->
+						<script>
+						//  Select the HTML element where you’ll put the list
+						const container = document.getElementById("news-list");
+
+						//  Filter the posts array for filenames containing the word "news"
+						const newsPosts = posts.filter(filename => filename.toLowerCase().includes("news"));
+
+						//  Loop through each matching post and build a list item
+						newsPosts.forEach(filename => {
+						  // Create a new <li> element
+						  const li = document.createElement("li");
+						  // Create a clickable link for that file
+						  const a = document.createElement("a");
+						  a.href = filename;           // link to the HTML page
+						  a.textContent = filename.replace(".html", ""); // text shown to user
+						  // Add the link to the list item
+						  li.appendChild(a);
+						  // Add the list item to the container
+						  container.appendChild(li);
+						});
+
+						// 🐞 4️⃣ Debug info (optional)
+						console.log("News posts found:", newsPosts);
+						</script>
+							 <p>Newsletter text!</p>
+							 Link to <a href"20-Comics_pre-production_assignment.html"> something.</a></p>
+					 </nav> <!-- end of letter-->
+
+					 <!-- The blogpost video section-->
+					 <video src="https://www.dropbox.com/scl/fi/k1y1u6xh5nicgj42ivju9/Woman-in-hat.MP4?rlkey=umouobkdjeo6hpdzs4ian1mhp&raw=1" controls autoplay muted loop type="video/mp4"></video> 
+							 <style>
+									 video {
+											height: 80vh; 
+											width: 100%;
+											object-fit: contain;
+											/*position: absolute;*/
+											}
+							 </style>
+
+		  </nav> <!-- End of blogpost content section-->
+
+
+		  <!------------------------ The Footer section-------------------->
+		 	<div class="post">
+				<img src="https://www.dropbox.com/scl/fi/ciakbmj924ddy8svij9mr/footer_standalone.png?rlkey=qvybeihd7xks85vpdajny14m7&raw=1" alt="Footer">
+				<a style="left: 0%; top: 0%; width:40%; height: 100%;" id="next-link" href="#" aria-label="Next post"></a>
+			<a style="left: 60%; top: 0%; width:40%; height: 100%;" id="prev-link" href="#" aria-label="Previous post"></a>
+			<a style="left: 42%; top: 0%; width:16%; height: 100%;" href="index.html" aria-label="Home"></a>
+      	</div>
+
+
+		  <!-----------------------  Text Expansion Section  --------------------------------> 
+		  <details>
+					 <summary>Expand for text caption </summary>
+					 <div class="letter">
+							<!-- Marker for new text:mfntxt -->
+							<b>Newsletters</b>
+							<p>This is a quite slow blog so chances are not much have changed the next time you check in.</p> 
+							<p>That's frustrating and eventually you might forget it exists and miss out on all the fun that comes later. </p>
+							<p>Thats where the newsletter comes in! About 4-6 times per year I send out a newsletter that contains a a summary of what happened since the last one.<p>
+							<p>Below is a list of the newsletters. </p>
+					</div>
+			</details>
+
+		  <br>
+
+		  <!-----------------------  Comments Expansion Section  ----------------------------> 
+		  <details>
+						 <summary> Expand to read or add comments </summary>
+						 <p> Scroll within the comment box below. (Your comment will show up after a while).</p>
+						 <nav class="comments">
+								<!-- Marker for new text:mfntxt -->
+							 <div id="cusdis_thread"
+								 data-host="https://cusdis.com"
+								 data-app-id="c9ed7762-8539-4eee-b196-b876111eb342"
+								 data-page-id="{{newsletters.html }}"
+								 data-page-url="{{ https://jansandstorm.com/newsletters.html}}"
+								 data-page-title="{{ newsletters.html}}"
+								 data-theme="dark"
+							  ></div>
+						 </nav> 
+
+						 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+		  </details>			
+
+		  <br>
+		  <br>
+		  <!-----------------------  Subscription Form Section  ----------------------------> 
+		  <!-- Minimal HTML email subscription button -->
+		  <button id="subscribeButton" style="
+						background-color: #333;
+						color: #fff;
+						border: none;
+						padding: 10px 20px;
+						font-size: 1rem;
+						border-radius: 4px;
+						cursor: pointer; ">
+						Subscribe to the Newsletter
+		  </button>
+
+		  <script>
+						// Simple obfuscation to deter spam bots
+						const user = "jan";
+						const domain = "jansandstorm.com";
+						const subject = encodeURIComponent("I'd like to subscribe");
+						const body = encodeURIComponent("Hi, I'd like to receive your newsletter.");
+						
+						document.getElementById("subscribeButton").addEventListener("click", () => {
+						window.location.href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+						});
+		  </script>
+
+		  <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+			 Clicking the button opens your email program. Just send the message to subscribe.
+		  </p>
+
+		  <br>
+		  <br>
+
+
+		 
+  </body>
+
+</html>
+
