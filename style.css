@@ -68,7 +68,8 @@
 
 		/*color: blue; */
    	/*mix-blend-mode: screen; */ 
-    	position: absolute;
+    	position: relative;
+    	/*position: absolute;*/
     	/*display: block;*/
 		display: inline-block;
 

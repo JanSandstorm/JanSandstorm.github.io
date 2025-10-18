@@ -1,0 +1,34 @@
+
+  <h1>News Posts</h1>
+  
+  <!-- The container where the list will appear -->
+  <ul id="news-list"></ul>
+
+  <!-- Load the posts list -->
+  <script src="posts.js"></script>
+
+  <!-- Your filtering script -->
+  <script>
+  // 🧭 1️⃣ Select the HTML element where you’ll put the list
+  const container = document.getElementById("news-list");
+
+  // 🧮 2️⃣ Filter the posts array for filenames containing the word "news"
+  const newsPosts = posts.filter(filename => filename.toLowerCase().includes("news"));
+
+  // 🧱 3️⃣ Loop through each matching post and build a list item
+  newsPosts.forEach(filename => {
+    // Create a new <li> element
+    const li = document.createElement("li");
+    // Create a clickable link for that file
+    const a = document.createElement("a");
+    a.href = filename;           // link to the HTML page
+    a.textContent = filename.replace(".html", ""); // text shown to user
+    // Add the link to the list item
+    li.appendChild(a);
+    // Add the list item to the container
+    container.appendChild(li);
+  });
+
+  // 🐞 4️⃣ Debug info (optional)
+  console.log("News posts found:", newsPosts);
+  </script>
