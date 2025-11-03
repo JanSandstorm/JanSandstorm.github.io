@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>janSandstorm.com</title>
+  <link>https://janSandstorm.com/</link>
+  <description>Updates from my art learning journey</description>
+  <language>en-us</language>
+
+  <item>
+    <title>Newsletter #3</title>
+    <link>22-newsletter-3.html</link>
+    <pubDate>Wed, 11 Jun 2025 12:00:00 +0000</pubDate>
+    <description>Newsletter #3</description>
+  </item>
+
+</channel>
+</rss>
+
