@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 <channel>
   <title>janSandstorm.com</title>
@@ -21,8 +21,8 @@
     <title>Newsletter #3!</title>
 	 <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
 	 <link>22-newsletter-3.html</link>
-	    <pubDate>Wed, 11 Jun 2025 12:00:00 +0000</pubDate>
-		 <description>Newsletter #3! </description>
+	 <pubDate>Wed, 11 Jun 2025 12:00:00 +0000</pubDate>
+	 <description>Newsletter #3! </description>
   </item>
 
 </channel>
