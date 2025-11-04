@@ -23,11 +23,14 @@
     <link>https://jansandstorm.com/23-webpage_upgrade.html</link>
 	 <guid>https://jansandstorm.com/23-webpage_upgrade.html</guid> 
     <pubDate>Wed, 29 Oct 2025 12:00:00 +0100</pubDate>
-    <description><![CDATA[
-      <p>Webpage changes</p>
-		<p><img src="https://www.dropbox.com/scl/fi/lc1qqqozcowt30e446ozt/Webpage_upgrade.png?rlkey=5sijsm22ojmjsgzt520twrh2q&raw=1" alt="Page 23 - Webpage upgrade announcement"/></p>
-    ]]></description>
-  </item>
+    <description><![CDATA[Webpage Upgrade]]></description>
+  
+  <content:encoded><![CDATA[
+    <p>Webpage Upgrade Announcement</p>
+    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/lc1qqqozcowt30e446ozt/Webpage_upgrade.png?rlkey=5sijsm22ojmjsgzt520twrh2q&raw=1" alt="Page 23 - Webpage upgrade announcement" width="600" height="400" /></p>
+    <p>More information on the upgrade can be found <a href="https://jansandstorm.com/23-webpage_upgrade.html">here</a>.</p>
+				]]></content:encoded>
+	</item>
 
   <item>
     <title>Newsletter #3</title>
