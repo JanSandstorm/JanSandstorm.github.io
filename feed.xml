@@ -27,7 +27,7 @@
   
   <content:encoded><![CDATA[
     <p>Webpage Upgrade Announcement</p>
-    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/lc1qqqozcowt30e446ozt/Webpage_upgrade.png?rlkey=5sijsm22ojmjsgzt520twrh2q&raw=1" alt="Page 23 - Webpage upgrade announcement" width="600" height="400" /></p>
+    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/lc1qqqozcowt30e446ozt/Webpage_upgrade.png?rlkey=5sijsm22ojmjsgzt520twrh2q&raw=1" alt="Page 23 - Webpage upgrade announcement" style="max-width: 100%; height: auto;"  /></p>
     <p>More information on the upgrade can be found <a href="https://jansandstorm.com/23-webpage_upgrade.html">here</a>.</p>
 				]]></content:encoded>
 	</item>
