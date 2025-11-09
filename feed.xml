@@ -12,12 +12,25 @@
   <link>https://jansandstorm.com/</link>
   <description>Updates from my art learning journey</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 04 Nov 2025 16:00:00 +0100</lastBuildDate>
+  <lastBuildDate>Tue, 09 Nov 2025 13:00:00 +0100</lastBuildDate>
   <generator>Custom RSS Feed</generator>
   <atom:link href="https://jansandstorm.com/feed.xml" rel="self" type="application/rss+xml" />
-https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html
+
+
+  <item>
+    <title>Newsletter #4</title>
+    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
+    <link>https://jansandstorm.com/27-Newsletter-4.html</link>
+	 <guid>https://jansandstorm.com/27-Newsletter-4.html</guid> 
+    <pubDate>Tue, 09 Nov 2025 13:00:00 +0100</pubDate>
+    <description><![CDATA[Newsletter #4 is out.]]></description>
+	 <content:encoded><![CDATA[
+        <p>More information can be found <a href="https://jansandstorm.com/27-Newsletter-4.html"> here</a>.</p>
+				]]></content:encoded>
+	</item>
+
 <item>
-    <title>The Lemon</title>
+    <title>Little Eagle Down - comic draft print </title>
     <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
     <link>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</link>
 	 <guid>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</guid> 

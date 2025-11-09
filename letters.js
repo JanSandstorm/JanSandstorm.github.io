@@ -2,6 +2,7 @@
 const posts = [
   	"index.html",              // The landing page (acts as the newest "post" in the chain)
   	"newsletters.html",              // The landing page (acts as the newest "post" in the chain)
+   "27-Newsletter-4.html",
   	"22-newsletter-3.html",  
 	"17-newsletter-2.html",
 	"3-newsletter-1.html"];
