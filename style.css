@@ -84,4 +84,25 @@
   	width: 50%; 
 }
 
+.minimal-hcard {
+  text-align: center;            /* centers everything inside */
+  font-size: 0.85em;             /* smaller text */
+  line-height: 1.2em;
+  margin-top: 1em;
+}
+
+.minimal-hcard img.u-photo {
+  display: block;                /* ensures width/height respected */
+  margin: 0 auto 0.3em auto;     /* center image and small space below */
+  width: 40px !important;        /* force small size */
+  height: 40px !important;
+  border-radius: 50%;            /* circular */
+}
+
+.minimal-hcard a {
+  text-decoration: none;
+  color: #555;
+  display: inline-block;
+  margin: 0 0.25em;
+}
 
