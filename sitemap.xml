@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 			<url>
+					<loc>28-Am I part of the Indieweb now.html</loc>
+		  	</url>
+
+		  	<url>
 					<loc>https://jansandstorm.com/27-Newsletter-4.html</loc>
-		  </url>
+		  	</url>
+
+		  	<url>
+					<loc>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</loc>
+		 	</url>
 
 		  <url>
-					<loc>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</loc>
-		  </url>
-		  <url>
 					<loc>https://jansandstorm.com/index.html</loc>
-		  </url>
+		 </url>
+
 		  <url>
 					 <loc>https://jansandstorm.com/projects.html</loc>
 		  </url>

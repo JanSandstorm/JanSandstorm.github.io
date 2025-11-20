@@ -12,10 +12,21 @@
   <link>https://jansandstorm.com/</link>
   <description>Updates from my art learning journey</description>
   <language>en-us</language>
-  <lastBuildDate>Tue, 09 Nov 2025 13:00:00 +0100</lastBuildDate>
+  <lastBuildDate>Thu, 20 Nov 2025 16:00:00 +0100</lastBuildDate>
   <generator>Custom RSS Feed</generator>
   <atom:link href="https://jansandstorm.com/feed.xml" rel="self" type="application/rss+xml" />
 
+<item>
+    <title>Am I part of the Indieweb now?</title>
+    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
+    <link>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</link>
+	 <guid>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</guid> 
+    <pubDate>Thu, 20 Nov 2025 16:00:00 +0100</pubDate>
+    <description><![CDATA[Am I part of the Indieweb now?]]></description>
+	 <content:encoded><![CDATA[
+        <p>More information can be found <a href="https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html"> here</a>.</p>
+				]]></content:encoded>
+	</item>
 
   <item>
     <title>Newsletter #4</title>
