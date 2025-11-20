@@ -2,6 +2,7 @@
 const posts = [
   	"index.html",              // The landing page (acts as the newest "post" in the chain)
 	"blog.html",
+	"28-Am_I_part_of_the_Indieweb_now.html",
 	"26-Little_Eagle_down_comic_draft_print_preview.html",
 	"25-the_lemon_acrylic_painting.html",
 	"23-webpage_upgrade.html",
