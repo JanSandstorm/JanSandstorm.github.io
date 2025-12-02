@@ -308,14 +308,56 @@ window.addEventListener('popstate',(ev)=>{
 });
 
 // --- TOUCH SWIPE ---
-let touchStartX=null, touchStartY=null;
-window.addEventListener('touchstart', (e)=>{ const t=e.touches[0]; touchStartX=t.clientX; touchStartY=t.clientY; }, {passive:true});
-window.addEventListener('touchend', (e)=>{
-  if(touchStartX===null) return; const t=e.changedTouches[0];
-  const dx = t.clientX - touchStartX; const dy = t.clientY - touchStartY; touchStartX=null;
-  if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)){ if(dx>0) prev(); else next(); }
-},{passive:true});
+// --- TOUCH SWIPE ---
+let touchStartX = null;
+let touchStartY = null;
+let touchStartTime = null;
 
+window.addEventListener('touchstart', (e) => {
+  const t = e.touches;
+  touchStartX = t.clientX;
+  touchStartY = t.clientY;
+  touchStartTime = Date.now();
+}, {passive: true});
+
+window.addEventListener('touchend', (e) => {
+  if (touchStartX === null) return;
+  
+  const t = e.changedTouches;
+  const dx = t.clientX - touchStartX;
+  const dy = t.clientY - touchStartY;
+  const dt = Date.now() - touchStartTime;
+  
+  touchStartX = null;
+  touchStartY = null;
+  touchStartTime = null;
+  
+  // Only trigger page nav if:
+  // 1. Horizontal movement > 40px
+  // 2. Horizontal movement > vertical movement (not a scroll)
+  // 3. Gesture was quick (< 500ms) - fast swipe, not slow drag
+  // 4. If zoomed, only nav if image isn't scrollable horizontally
+  
+  const isHorizontalSwipe = Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy);
+  const isQuickSwipe = dt < 500;
+  
+  if (!isHorizontalSwipe || !isQuickSwipe) return;
+  
+  // If zoomed, check if image can scroll horizontally
+  if (zoomed) {
+    const imageWrap = document.getElementById('imageWrap');
+    const canScrollHorizontally = imageWrap.scrollWidth > imageWrap.clientWidth;
+    
+    if (canScrollHorizontally) {
+      // Don't change page, let scroll happen naturally
+      return;
+    }
+  }
+  
+  // Trigger page navigation
+  if (dx > 0) prev();
+  else next();
+}, {passive: true});
 // --- DOUBLE CLICK ZOOM ---
 pageImage.addEventListener('dblclick', ()=> setZoom(!zoomed));
 
