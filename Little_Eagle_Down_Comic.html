@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Comic Reader — Single-File Template</title>
+  <style>
+    :root {
+      --bg:#111;
+      --panel-bg:#0b0b0b;
+      --ui:#e9e9e9;
+      --muted:#bdbdbd;
+    }
+
+    html,body {
+      height:100%;
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+      background:var(--bg);
+      color:var(--ui);
+    }
+
+    .reader-shell {display:flex; flex-direction:column; min-height:100vh;}
+
+    header.reader-top {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:10px 14px;
+      background:linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.3));
+      position:sticky;
+      top:0;
+      z-index:30;
+    }
+
+    header h1 {font-size:16px; margin:0; color:var(--ui);}
+    .controls {margin-left:auto; display:flex; gap:8px; align-items:center;}
+    button.icon {
+      background:transparent;
+      border:1px solid rgba(255,255,255,.08);
+      color:var(--ui);
+      padding:8px;
+      border-radius:6px;
+      cursor:pointer;
+    }
+    button.icon:active {transform:translateY(1px);}
+
+    main.reader-main {flex:1; display:flex; align-items:center; justify-content:center; padding:0;}
+
+    .viewport {
+      max-width:1200px;
+      width:100%;
+      height:100%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .image-wrap {
+      position:relative;
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+     /* background:#fff;*/
+		background:#111;
+      border-radius:6px;
+    }
+
+    img.page {
+      display:block;
+      transition:transform .25s ease;
+      cursor:zoom-in;
+      user-select:none;
+      -webkit-user-drag:none;
+    }
+
+   img.page.zoomed {
+  cursor: zoom-out;
+  transform: scale(2);
+  transform-origin: top center;
+
+	}
+
+
+    .nav {display:flex; gap:8px; margin-top:10px; align-items:center;}
+    .progress {font-size:14px; color:var(--muted);}
+
+    .pagination {display:flex; gap:8px; align-items:center;}
+    .btn {background:#111; border:1px solid rgba(255,255,255,.06); color:var(--ui); padding:8px 12px; border-radius:6px; cursor:pointer;}
+
+    .thumbs {display:flex; gap:6px; align-items:center; overflow:auto; padding:8px 0; width:100%;}
+    .thumbs img {height:56px; border-radius:4px; border:2px solid transparent; cursor:pointer;}
+    .thumbs img.active {border-color:#ffd36b;}
+
+    @media (max-width:700px){
+      header h1{font-size:14px;}
+      .image-wrap{padding:0;}
+    }
+
+    .hotspot {position:absolute; top:0; bottom:0; width:35%; cursor:pointer;}
+    .hotspot.left{left:0;}
+    .hotspot.right{right:0;}
+
+    footer.reader-foot {
+      padding:10px 14px;
+      background:linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.2));
+      display:flex; align-items:center; gap:12px;
+    }
+    footer .subscribe {margin-left:auto; color:var(--muted); font-size:13px;}
+  </style>
+</head>
+<body>
+<div class="reader-shell">
+  <header class="reader-top">
+    <h1 id="title">Little Eagle Down — a Comic by Jan Sandstrom</h1>
+
+    <div class="controls">
+      <button class="icon btn" id="fitToggle">Fit: Height</button>
+      <button class="icon btn" id="zoomToggle">Zoom</button>
+      <button class="icon btn" id="firstBtn">⏮</button>
+      <button class="icon btn" id="prevBtn">◀</button>
+      <div class="progress" id="progress">Page 1 / 20</div>
+      <button class="icon btn" id="nextBtn">▶</button>
+      <button class="icon btn" id="lastBtn">⏭</button>
+    </div>
+  </header>
+
+  <main class="reader-main">
+    <div class="viewport" id="viewport">
+      <div class="image-wrap" id="imageWrap">
+        <div class="hotspot left" id="hotLeft"></div>
+        <img src="" alt="" class="page" id="pageImage" draggable="false"/>
+        <div class="hotspot right" id="hotRight"></div>
+      </div>
+
+      <div class="nav">
+        <div class="pagination">
+          <input type="number" id="pageInput" min="1" value="1" style="width:64px;padding:6px;border-radius:6px;border:1px solid rgba(255,255,255,.06);background:transparent;color:var(--ui)"/>
+          <button class="btn" id="goBtn">Go</button>
+        </div>
+        <div class="thumbs" id="thumbBar" style="margin-left:10px"></div>
+      </div>
+    </div>
+  </main>
+
+<footer class="reader-foot">
+  <div class="meta" id="metaTxt">
+    Tip: use ← → keys, swipe, or tap sides to navigate. Toggle Fit/Zoom for better reading.
+  </div>
+  <div class="subscribe">
+    <a href="https://jansandstorm.com" target="_blank" rel="noopener noreferrer" style="color:var(--muted); text-decoration:underline;">
+      Go to https://jansandstorm.com
+    </a>
+  </div>
+</footer>
+
+<script>
+const imageList = [
+  {src:'01-Little Eagle Down Front Cover.jpg',alt:''},
+  {src:'02-Little Eagle Down Interior Cover.jpg',alt:''},
+  {src:'03-Little Eagle Down Page 1.jpg',alt:''},
+  {src:'04-Little Eagle Down Page 2.jpg',alt:''},
+  {src:'05-Little Eagle Down Page 3.jpg',alt:''},
+  {src:'06-Little Eagle Down Page 4.jpg',alt:''},
+  {src:'07-Little Eagle Down Page 5.jpg',alt:''},
+  {src:'08-Little Eagle Down Page 6.jpg',alt:''},
+  {src:'09-Little Eagle Down Page 7.jpg',alt:''},
+  {src:'10-Little Eagle Down Page 8.jpg',alt:''},
+  {src:'11-Little Eagle Down Page 9.jpg',alt:''},
+  {src:'12-Little Eagle Down Page 10.jpg',alt:''},
+  {src:'13-Little Eagle Down Page 11.jpg',alt:''},
+  {src:'14-Little Eagle Down Page 12.jpg',alt:''},
+  {src:'15-Little Eagle Down Page 13.jpg',alt:''},
+  {src:'16-Little Eagle Down Page 14.jpg',alt:''},
+  {src:'17-Little Eagle Down Page 15.jpg',alt:''},
+  {src:'18-Little Eagle Down Page 16.jpg',alt:''},
+  {src:'19-Little Eagle Down Interior Back Cover.jpg',alt:''},
+  {src:'20-Little Eagle Down Back Cover.jpg',alt:''}
+];
+
+const pageImage = document.getElementById('pageImage');
+const progress = document.getElementById('progress');
+const pageInput = document.getElementById('pageInput');
+const goBtn = document.getElementById('goBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const firstBtn = document.getElementById('firstBtn');
+const lastBtn = document.getElementById('lastBtn');
+const fitToggle = document.getElementById('fitToggle');
+const zoomToggle = document.getElementById('zoomToggle');
+const thumbBar = document.getElementById('thumbBar');
+const titleEl = document.getElementById('title');
+
+const total = imageList.length;
+let index = 0;
+let fitMode = 'height';  // default to Fit Height
+let zoomed = false;
+
+// --- BUILD THUMBNAILS ---
+function buildThumbs(){
+  thumbBar.innerHTML = '';
+  imageList.forEach((it,i)=>{
+    const t = document.createElement('img');
+    t.src = it.src;
+    t.alt = it.alt || ('Page '+(i+1));
+    t.addEventListener('click',()=>{ goTo(i); });
+    t.loading='lazy';
+    t.classList.toggle('active', i===index);
+    thumbBar.appendChild(t);
+  });
+}
+
+// --- PRELOAD ---
+function preload(idx){ if(idx>=0 && idx<total){ const im=new Image(); im.src=imageList[idx].src; }}
+
+// --- UPDATE PROGRESS ---
+function updateProgress(){
+  progress.textContent = `Page ${index+1} / ${total}`;
+  pageInput.value = index+1;
+  const thumbs = thumbBar.querySelectorAll('img');
+  thumbs.forEach((t,i)=>t.classList.toggle('active', i===index));
+  document.title = `${titleEl.textContent} — Page ${index+1}`;
+}
+
+// --- SET IMAGE ---
+function setImage(idx){
+  const it=imageList[idx];
+  pageImage.src=it.src;
+  pageImage.alt=it.alt || ('Page '+(idx+1));
+}
+
+// --- NAVIGATION ---
+function goTo(idx, push=true){
+  if(idx<0) idx=0; if(idx>=total) idx=total-1;
+  index=idx;
+  setImage(index);
+  updateProgress();
+  preload(index-1); preload(index+1);
+  if(push){
+    const url = new URL(location.href);
+    url.searchParams.set('page', index+1);
+    history.pushState({page:index+1}, '', url);
+  }
+}
+function prev(){ goTo(index-1); }
+function next(){ goTo(index+1); }
+function first(){ goTo(0); }
+function last(){ goTo(total-1); }
+
+prevBtn.addEventListener('click',prev);
+nextBtn.addEventListener('click',next);
+firstBtn.addEventListener('click',first);
+lastBtn.addEventListener('click',last);
+goBtn.addEventListener('click',()=>{ const v=Number(pageInput.value); if(!isNaN(v)) goTo(v-1); });
+pageInput.addEventListener('keydown',(e)=>{ if(e.key==='Enter') goBtn.click(); });
+
+// --- FIT TOGGLE ---
+fitToggle.addEventListener('click', ()=>{
+  fitMode = (fitMode==='width') ? 'height' : 'width';
+  fitToggle.textContent = 'Fit: '+(fitMode==='width' ? 'Width' : 'Height');
+  applyFit();
+});
+
+// --- APPLY FIT ---
+function applyFit(){
+  if(fitMode==='width'){
+    pageImage.style.width='100%';
+    pageImage.style.height='auto';
+    pageImage.style.maxWidth='100%';
+    pageImage.style.maxHeight='none';
+    document.getElementById('imageWrap').style.padding='0'; // remove padding for full width
+  } else {
+    pageImage.style.height='80vh';
+    pageImage.style.width='auto';
+    pageImage.style.maxHeight='80vh';
+    pageImage.style.maxWidth='none';
+    document.getElementById('imageWrap').style.padding='6px'; // restore padding
+  }
+}
+
+// --- ZOOM ---
+function setZoom(z){
+  zoomed = z;
+  pageImage.classList.toggle('zoomed', zoomed);
+  zoomToggle.textContent = zoomed? 'Zoom: On' : 'Zoom';
+}
+zoomToggle.addEventListener('click', ()=> setZoom(!zoomed));
+pageImage.addEventListener('click', ()=> setZoom(!zoomed));
+
+// --- HOTSPOTS ---
+document.getElementById('hotLeft').addEventListener('click', prev);
+document.getElementById('hotRight').addEventListener('click', next);
+
+// --- KEYBOARD ---
+window.addEventListener('keydown',(e)=>{
+  if(e.key==='ArrowLeft') prev();
+  if(e.key==='ArrowRight') next();
+  if(e.key==='Home') first();
+  if(e.key==='End') last();
+  if(e.key===' ') { e.preventDefault(); next(); }
+});
+
+// --- HISTORY ---
+window.addEventListener('popstate',(ev)=>{
+  const p = (ev.state && ev.state.page)? ev.state.page-1 : Number(new URL(location.href).searchParams.get('page')||1)-1;
+  goTo(isNaN(p)?0:p,false);
+});
+
+// --- TOUCH SWIPE ---
+let touchStartX=null, touchStartY=null;
+window.addEventListener('touchstart', (e)=>{ const t=e.touches[0]; touchStartX=t.clientX; touchStartY=t.clientY; }, {passive:true});
+window.addEventListener('touchend', (e)=>{
+  if(touchStartX===null) return; const t=e.changedTouches[0];
+  const dx = t.clientX - touchStartX; const dy = t.clientY - touchStartY; touchStartX=null;
+  if(Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)){ if(dx>0) prev(); else next(); }
+},{passive:true});
+
+// --- DOUBLE CLICK ZOOM ---
+pageImage.addEventListener('dblclick', ()=> setZoom(!zoomed));
+
+// --- DRAG PREVENT ---
+pageImage.addEventListener('dragstart', e=> e.preventDefault());
+
+// --- INITIALIZE READER ---
+function init(){
+  buildThumbs();
+  const qp = Number(new URL(location.href).searchParams.get('page')||1);
+  const start = (isNaN(qp)||qp<1)?0:Math.min(total-1,qp-1);
+  applyFit();   // default Fit Height
+  goTo(start,false);
+  preload(0); preload(1);
+}
+
+// --- EXPOSE ---
+window.comicReader = {goTo,next,prev,total};
+
+init();
+</script>
+</body>
+</html>
+
+
