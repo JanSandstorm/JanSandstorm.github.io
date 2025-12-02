@@ -235,6 +235,10 @@ function goTo(idx, push=true){
   if(idx<0) idx=0; if(idx>=total) idx=total-1;
   index=idx;
   setImage(index);
+// ALWAYS SCROLL TO TOP WHEN PAGE CHANGES
+document.getElementById('imageWrap').scrollTo(0, 0);
+window.scrollTo(0, 0);  // extra safety for Safari/iPad
+		  
   updateProgress();
   preload(index-1); preload(index+1);
   if(push){
