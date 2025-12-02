@@ -75,8 +75,11 @@
       -webkit-user-drag:none;
     }
 
-    img.page.zoomed {cursor:zoom-out; transform:scale(2);}
-
+   img.page.zoomed {
+  cursor: zoom-out;
+  transform: scale(2);
+  transform-origin: top center;
+}
     .nav {display:flex; gap:8px; margin-top:10px; align-items:center;}
     .progress {font-size:14px; color:var(--muted);}
 
@@ -333,4 +336,5 @@ init();
 </script>
 </body>
 </html>
+
 
