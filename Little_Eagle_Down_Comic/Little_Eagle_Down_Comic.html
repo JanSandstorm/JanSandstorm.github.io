@@ -289,7 +289,7 @@ function setZoom(z){
   pageImage.classList.toggle('zoomed', zoomed);
   zoomToggle.textContent = zoomed? 'Zoom: On' : 'Zoom';
 }
-//zoomToggle.addEventListener('click', ()=> setZoom(!zoomed));
+zoomToggle.addEventListener('click', ()=> setZoom(!zoomed));
 // pageImage.addEventListener('click', ()=> setZoom(!zoomed));
 
 // --- HOTSPOTS ---
