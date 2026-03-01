@@ -6,7 +6,7 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
   xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
-
+		  
 <channel>
   <title>jansandstorm.com</title>
   <link>https://jansandstorm.com/</link>
@@ -45,7 +45,7 @@
     <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
     <link>https://jansandstorm.com/27-Newsletter-4.html</link>
 	 <guid>https://jansandstorm.com/27-Newsletter-4.html</guid> 
-    <pubDate>Tue, 09 Nov 2025 13:00:00 +0100</pubDate>
+    <pubDate>Wed, 12 Nov 2025 13:00:00 +0100</pubDate>
     <description><![CDATA[Newsletter #4 is out.]]></description>
 	 <content:encoded><![CDATA[
         <p>More information can be found <a href="https://jansandstorm.com/27-Newsletter-4.html"> here</a>.</p>
@@ -57,7 +57,7 @@
     <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
     <link>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</link>
 	 <guid>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</guid> 
-    <pubDate>Tue, 08 Nov 2025 18:00:00 +0100</pubDate>
+    <pubDate>Tue, 11 Nov 2025 18:00:00 +0100</pubDate>
     <description><![CDATA[Little Eagle Down - draft comic in print]]></description>
   
   <content:encoded><![CDATA[
