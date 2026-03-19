@@ -1,130 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-  xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
-		  
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
 <channel>
-  <title>jansandstorm.com</title>
-  <link>https://jansandstorm.com/</link>
-  <description>Updates from my art learning journey</description>
-  <language>en-us</language>
-  <lastBuildDate>Sat, 14 Mar 2026 17:30:00 +0100</lastBuildDate>
-  <generator>Custom RSS Feed</generator>
+  <title>Jan Sandstorm</title>
+  <link>https://jansandstorm.com</link>
+  <description>Notes from the practice — literary fiction, comics, painting, music</description>
+  <language>en</language>
   <atom:link href="https://jansandstorm.com/feed.xml" rel="self" type="application/rss+xml" />
 
 
-
-   <item>
-			  <title>First poetry collection finished</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/30-first_poetry_collection_finished.html</link>
-	 <guid>https://jansandstorm.com/30-first_poetry_collection_finished.html</guid> 
-    <pubDate>Sat, 14 Mar 2026 17:30:00 +0100</pubDate>
-    <description><![CDATA[First poetry collection finished]]></description>
-	 <content:encoded><![CDATA[
-				 <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/bee44grm7yp4m7evsp1m2/30-first_poetry_collection_finished.html?rlkey=3dy0iaeb4pnw0crmnf0ozs0sv&raw=1" alt="Page 30 - Poetry collection finished" style="max-width: 100%; height: auto;"  /></p>
-					 <p>More information can be found <a href="https://jansandstorm.com/30-first_poetry_collection_finished.html> here</a>.</p>
-				]]></content:encoded>
-	</item>
-
-  <item>
-    <title>Woman and umbrella acrylic painting</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/29-woman_and_umbrella_acrylic_painting.html</link>
-	 <guid>https://jansandstorm.com/29-woman_and_umbrella_acrylic_painting.html</guid> 
-    <pubDate>Sun, 01 Mar 2026 13:00:00 +0100</pubDate>
-    <description><![CDATA[Woman and umbrella acrylic painting]]></description>
-	 <content:encoded><![CDATA[
-        <p>More information can be found <a href="https://jansandstorm.com/29-woman_and_umbrella_acrylic_painting.html"> here</a>.</p>
-				]]></content:encoded>
-	</item>
-
+ 
 <item>
-    <title>Am I part of the Indieweb now?</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</link>
-	 <guid>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</guid> 
-    <pubDate>Thu, 20 Nov 2025 16:00:00 +0100</pubDate>
-    <description><![CDATA[Am I part of the Indieweb now?]]></description>
-	 <content:encoded><![CDATA[
-        <p>More information can be found <a href="https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html"> here</a>.</p>
-				]]></content:encoded>
-	</item>
+  <title>Site relaunched — new structure </title>
+  <link>https://jansandstorm.com/index.html</link>
+  <guid>https://jansandstorm.com/index.html</guid>
+  <pubDate>Sun, 19 Mar 2026 14:00:00 +0100</pubDate>
+  <description><![CDATA[Site relaunched — new structure]]></description>
+</item>
 
-  <item>
-    <title>Newsletter #4</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/27-Newsletter-4.html</link>
-	 <guid>https://jansandstorm.com/27-Newsletter-4.html</guid> 
-    <pubDate>Wed, 12 Nov 2025 13:00:00 +0100</pubDate>
-    <description><![CDATA[Newsletter #4 is out.]]></description>
-	 <content:encoded><![CDATA[
-	 <p>More information can be found <a href="https://jansandstorm.com/27-Newsletter-4.html"> here</a>.</p>
-				
-				]]></content:encoded>
-	</item>
-
-<item>
-    <title>Little Eagle Down - comic draft print </title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</link>
-	 <guid>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</guid> 
-    <pubDate>Tue, 11 Nov 2025 18:00:00 +0100</pubDate>
-    <description><![CDATA[Little Eagle Down - draft comic in print]]></description>
-  
-  <content:encoded><![CDATA[
-    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/yxqk9xoqtfti5685vjore/comic_update_little_eagle_down_draft_printed.png?rlkey=ucyyja2vdcnkzi0r2tdtx523q&raw=1" alt="Page 26 - Little Eagle Down - comic draft print preview" style="max-width: 100%; height: auto;"  /></p>
-    <p>More information can be found <a href="https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html"> here</a>.</p>
-				]]></content:encoded>
-	</item>
-
-<item>
-    <title>The Lemon</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/25-the_lemon_acrylic_painting.html</link>
-	 <guid>https://jansandstorm.com/25-the_lemon_acrylic_painting.html</guid> 
-    <pubDate>Tue, 04 Nov 2025 16:00:00 +0100</pubDate>
-    <description><![CDATA[Painting acrylic version of Richard Berg's The Lemon]]></description>
-  
-  <content:encoded><![CDATA[
-    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/9qjrb863h9bzpj8wnxu8t/the_lemon_acrylic_painting.png?rlkey=drazhzqx7qi100b80p7j0qwhf&raw=1" alt="Page 25 - Painting acrylic version of Richard Berg's The Lemon" style="max-width: 100%; height: auto;"  /></p>
-    <p>More information on the upgrade can be found <a href="https://jansandstorm.com/25-the_lemon_acrylic_painting.html">here</a>.</p>
-				]]></content:encoded>
-	</item>
-
-
-  <item>
-    <title>Webpage upgrade</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-    <link>https://jansandstorm.com/23-webpage_upgrade.html</link>
-	 <guid>https://jansandstorm.com/23-webpage_upgrade.html</guid> 
-    <pubDate>Wed, 29 Oct 2025 12:00:00 +0100</pubDate>
-    <description><![CDATA[Webpage Upgrade]]></description>
-  
-  <content:encoded><![CDATA[
-    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/lc1qqqozcowt30e446ozt/Webpage_upgrade.png?rlkey=5sijsm22ojmjsgzt520twrh2q&raw=1" alt="Page 23 - Webpage upgrade announcement" style="max-width: 100%; height: auto;"  /></p>
-    <p>More information on the upgrade can be found <a href="https://jansandstorm.com/23-webpage_upgrade.html">here</a>.</p>
-				]]></content:encoded>
-	</item>
-
-  <item>
-    <title>Newsletter #3</title>
-    <dc:creator><![CDATA[Jan Sandstrom]]></dc:creator>
-	 <link>https://jansandstorm.com/22-newsletter-3.html</link>
-	 <guid>https://jansandstorm.com/22-newsletter-3.html</guid> 
-    <pubDate>Wed, 11 Jun 2025 12:00:00 +0100</pubDate>
-    <description><![CDATA[Newsletter #3]]></description>
-  
-  <content:encoded><![CDATA[
-    <p><img loading="lazy" decoding="async" class="alignnone size-large" src="https://www.dropbox.com/scl/fi/fsn10fbnas3r5jk3jurto/Little_Eagle_Down-Checking_the_engine.JPG?rlkey=1nopjh5cz7venmf65gc5npdru&raw=1" alt="Panel from Little Eagle Down comic" style="max-width: 100%; height: auto;/></p>
-    <p>More information on the upgrade can be found <a href="https://jansandstorm.com/22-newsletter-3.html">here</a>.</p>
-				]]></content:encoded>
-
-  </item>
 
 </channel>
 </rss>
