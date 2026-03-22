@@ -99,9 +99,8 @@
 }
 .page-content {
   position: relative;
-  max-width: 640px;
-
-  margin: 3rem auto 3rem 10%;
+  max-width: 65ch;
+  margin: 3rem auto;
   padding: 0 2rem;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
@@ -109,7 +108,6 @@
   line-height: 1.7;
   color: #111;
 }
-
 .page-content h1 {
   font-size: 1.6rem;
   font-weight: normal;
