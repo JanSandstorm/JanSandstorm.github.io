@@ -88,7 +88,7 @@
   display: block;
 }
 .proof-image {
-  width: 120px;
+  width: 120px !important;
   height: auto;
   display: block;
   margin: 0.5rem 0;
