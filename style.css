@@ -87,7 +87,23 @@
   height: auto;
   display: block;
 }
+.proof-image {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
+}
 
+figure {
+  margin: 2rem 0;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #999;
+  text-align: right;
+  margin-top: 0.4rem;
+}
 /* Stack vertically on mobile */
 @media (max-width: 768px) {
   .page-split {
@@ -132,7 +148,11 @@
   text-decoration: underline;
 }
 
-
+.page-content figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 html, body {
 		margin: 0;
     	padding: 0;
