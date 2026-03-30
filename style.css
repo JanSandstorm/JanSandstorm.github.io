@@ -283,3 +283,26 @@ html, body {
   margin: 0 0.25em;
 }
 
+.embeddable-buttondown-form input[type="email"] {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    color: #111;
+}
+
+.embeddable-buttondown-form input[type="submit"] {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#contact-container a {
+    color: #666;
+    text-decoration: underline;
+}
