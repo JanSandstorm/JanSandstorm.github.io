@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             method="post"
             class="embeddable-buttondown-form"
         >
+            <label for="bd-email" style="position:absolute;width:1px;height:1px;overflow:hidden;">Email address</label>
             <input type="email" name="email" id="bd-email" placeholder="Your email" />
             <input type="submit" value="Subscribe" />
         </form>
