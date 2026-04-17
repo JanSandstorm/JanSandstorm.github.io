@@ -1,96 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-		<url>
-					<loc>https://jansandstorm.com/34-Little_Eagle_Down_Comic_by_Jan_Sandstrom.html</loc>
-		 </url>
+	<url>
+		<loc>https://jansandstorm.com/</loc>
+		<lastmod>2026-04-16</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/about.html</loc>
+		<lastmod>2026-04-16</lastmod>
+	</url>
 
-		 <url>
-					<loc>https://jansandstorm.com/33-Newsletter-5.html</loc>
-		 </url>
+	<url>
+		<loc>https://jansandstorm.com/practice.html</loc>
+		<lastmod>2026-04-16</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/newsletters.html</loc>
+		<lastmod>2026-04-16</lastmod>
+	</url>
 
-		 <url>
-					<loc>https://jansandstorm.com/32-jan_sandstorm_short_story_in_swedish_tjugonde_november.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/art_gallery.html</loc>
+		<lastmod>2026-04-16</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/33-Newsletter-5.html</loc>
+		<lastmod>2026-03-27</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/32-jan_sandstorm_short_story_in_swedish_tjugonde_november.html</loc>
+		<lastmod>2026-03-22</lastmod>
+	</url>
 
-		  <url>
-					<loc>https://jansandstorm.com/31-what_the_painting_wants_to_become.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/31-what_the_painting_wants_to_become.html</loc>
+		<lastmod>2026-03-22</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/34-Little_Eagle_Down_Comic_by_Jan_Sandstorm.html</loc>
+		<lastmod>2025-12-01</lastmod>
+	</url>
 
-		  	<url>
-					<loc>https://jansandstorm.com/27-Newsletter-4.html</loc>
-		 </url>
+	<url>
+		<loc>https://jansandstorm.com/27-Newsletter-4.html</loc>
+		<lastmod>2025-11-08</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</loc>
+		<lastmod>2025-11-08</lastmod>
+	</url>
 
-		  	<url>
-					<loc>https://jansandstorm.com/26-Little_Eagle_down_comic_draft_print_preview.html</loc>
-		 </url>
+	<url>
+		<loc>https://jansandstorm.com/25-the_lemon_acrylic_painting.html</loc>
+		<lastmod>2025-11-08</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</loc>
+		<lastmod>2025-11-08</lastmod>
+	</url>
 
-		  <url>
-					<loc>https://jansandstorm.com/art_gallery.html</loc>
-			</url>
+	<url>
+		<loc>https://jansandstorm.com/22-newsletter-3.html</loc>
+		<lastmod>2025-06-11</lastmod>
+	</url>
 
+	<url>
+		<loc>https://jansandstorm.com/21-Acrylic_painting_woman_in_hat.html</loc>
+		<lastmod>2025-06-11</lastmod>
+	</url>
 
-		  <url>
-					<loc>https://jansandstorm.com/</loc>
-			</url>
+	<url>
+		<loc>https://jansandstorm.com/20-Comics_pre-production_assignment.html</loc>
+		<lastmod>2025-06-11</lastmod>
+	</url>
 
-		  <url>
-					 <loc>https://jansandstorm.com/practice.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/19-painting_class_woman_in_bar.html</loc>
+		<lastmod>2025-06-11</lastmod>
+	</url>
 
-		  <url>
-					 <loc>https://jansandstorm.com/newsletters.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/17-newsletter-2.html</loc>
+		<lastmod>2024-12-22</lastmod>
+	</url>
 
-		  <url>
-					 <loc>https://jansandstorm.com/about.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/3-newsletter-1.html</loc>
+		<lastmod>2024-09-12</lastmod>
+	</url>
 
-	  <url>
-					 <loc>https://jansandstorm.com/28-Am_I_part_of_the_Indieweb_now.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/2-summer_books_2024.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/3-newsletter-1.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/17-newsletter-2.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/19-painting_class_woman_in_bar.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/20-Comics_pre-production_assignment.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/21-Acrylic_painting_woman_in_hat.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/22-newsletter-3.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/23-webpage_upgrade.html</loc>
-		  </url>
-
-		  <url>
-					 <loc>https://jansandstorm.com/25-the_lemon_acrylic_painting.html</loc>
-		  </url>
+	<url>
+		<loc>https://jansandstorm.com/2-summer_books_2024.html</loc>
+		<lastmod>2024-09-01</lastmod>
+	</url>
 
 </urlset>

@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       : `<a href="${link.href}">${link.label}</a>`;
   }).join(" &nbsp;·&nbsp; ");
 
-  container.innerHTML = `<p style="text-align: center;">${nav}</p>`;
+  container.innerHTML = `<nav style="text-align: center;" aria-label="Main navigation">${nav}</nav>`;
 });
 
